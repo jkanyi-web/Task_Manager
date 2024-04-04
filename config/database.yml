@@ -13,7 +13,7 @@ test:
   database: task_manager_test
   username: postgres
   password: <%= Rails.application.credentials.dig(:development, :task_manager_database_password) %>
-production:
+  production:
   <<: *default
   database: task_manager_production
   username: task_manager
